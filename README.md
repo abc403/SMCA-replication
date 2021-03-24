@@ -62,7 +62,66 @@ Non-DC5 models were trained with batch size 2, and DC5 with 1,
 so DC5 models show a significant drop in AP if evaluated with more
 than 1 image per GPU.
 
+We provide baseline DETR and DETR-DC5 models, and plan to include more in future.
+AP is computed on COCO 2017 val5k, and inference time is over the first 100 val5k COCO images,
+with torchscript transformer.
 
+<table>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>backbone</th>
+      <th>schedule</th>
+      <th>inf_time</th>
+      <th>box AP</th>
+      <th>url</th>
+      <th>size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>DETR</td>
+      <td>R50</td>
+      <td>500</td>
+      <td>0.036</td>
+      <td>42.0</td>
+      <td><a href="https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth">download</a></td>
+      <td>159Mb</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DETR-DC5</td>
+      <td>R50</td>
+      <td>500</td>
+      <td>0.083</td>
+      <td>43.3</td>
+      <td><a href="https://dl.fbaipublicfiles.com/detr/detr-r50-dc5-f0fb7ef5.pth">download</a></td>
+      <td>159Mb</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DETR</td>
+      <td>R101</td>
+      <td>500</td>
+      <td>0.050</td>
+      <td>43.5</td>
+      <td><a href="https://dl.fbaipublicfiles.com/detr/detr-r101-2c7b67e5.pth">download</a></td>
+      <td>232Mb</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>DETR-DC5</td>
+      <td>R101</td>
+      <td>500</td>
+      <td>0.097</td>
+      <td>44.9</td>
+      <td><a href="https://dl.fbaipublicfiles.com/detr/detr-r101-dc5-a2e86def.pth">download</a></td>
+      <td>232Mb</td>
+    </tr>
+  </tbody>
+</table>
 
 
 # fovea_scale_head_query_mixture
