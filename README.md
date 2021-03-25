@@ -42,3 +42,60 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --coco_p
 ```
 A single epoch takes 30 minutes, so 50 epoch training
 takes around 25 hours on a single machine with 8 V100 cards.
+
+<table>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>backbone</th>
+      <th>schedule</th>
+      <th>inf_time</th>
+      <th>box AP</th>
+      <th>url</th>
+      <th>size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>DETR</td>
+      <td>R50</td>
+      <td>500</td>
+      <td>0.036</td>
+      <td>42.0</td>
+      <td><a href="https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth">download</a></td>
+      <td>159Mb</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DETR-DC5</td>
+      <td>R50</td>
+      <td>500</td>
+      <td>0.083</td>
+      <td>43.3</td>
+      <td><a href="https://dl.fbaipublicfiles.com/detr/detr-r50-dc5-f0fb7ef5.pth">download</a></td>
+      <td>159Mb</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DETR</td>
+      <td>R101</td>
+      <td>500</td>
+      <td>0.050</td>
+      <td>43.5</td>
+      <td><a href="https://dl.fbaipublicfiles.com/detr/detr-r101-2c7b67e5.pth">download</a></td>
+      <td>232Mb</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>DETR-DC5</td>
+      <td>R101</td>
+      <td>500</td>
+      <td>0.097</td>
+      <td>44.9</td>
+      <td><a href="https://dl.fbaipublicfiles.com/detr/detr-r101-dc5-a2e86def.pth">download</a></td>
+      <td>232Mb</td>
+    </tr>
+  </tbody>
+</table>
