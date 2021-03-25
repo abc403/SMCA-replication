@@ -56,21 +56,21 @@ takes around 25 hours on a single machine with 8 V100 cards.
   <tbody>
     <tr>
       <th>0</th>
-      <td>DETR</td>
+      <td>SMCA(single scale)</td>
       <td>R50</td>
       <td>50</td>
       <td>41.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>DETR</td>
+      <td>SMCA(single scale)</td>
       <td>R50</td>
       <td>108</td>
       <td>42.7</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>DETR</td>
+      <td>SMCA(single scale)</td>
       <td>R50</td>
       <td>250</td>
       <td>43.5</td>
