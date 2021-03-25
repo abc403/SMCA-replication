@@ -63,10 +63,10 @@ takes around 25 hours on a single machine with 8 V100 cards.
     </tr>
     <tr>
       <th>1</th>
-      <td>DETR-DC5</td>
+      <td>DETR</td>
       <td>R50</td>
       <td>108</td>
-      <td>43.3</td>
+      <td>42.7</td>
     </tr>
     <tr>
       <th>2</th>
