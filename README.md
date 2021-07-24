@@ -21,6 +21,8 @@ That's it, should be good to train and evaluate detection models.
 pip install git+https://github.com/cocodataset/panopticapi.git
 ```
 
+## SMCA has been accepted by ICCV 2021. This repo has been served for code submission during review period. Thus, we will keep the repo fixed. Polished version of SMCA-DETR will be released in a new repo and link will be updated soon. 
+
 ## Data preparation
 
 Download and extract COCO 2017 train and val images with annotations from
